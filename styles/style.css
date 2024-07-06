@@ -1,69 +1,58 @@
-/* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(15, 22, 36);
 }
 
 body {    
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(15, 22, 36);
     color: white;
 }
 
-#menu--inicio {
+header {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu--inicio {
     display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 25px;
+    padding: 10px 20px;
+}
+
+.menu--inicio ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu--inicio li {
+    margin-left: 10px;
 }
 
 .menu--inicio a {
     text-decoration: none;
     padding: 20px 20px;
-    margin-left: 10px;
     color: white;
+    font-size: 18px;
+    transition: color 0.5s ease-in-out;
+}
+
+.menu--inicio a.active {
+    color: #007BFF;
 }
 
 section {
     padding: 20px;
-    margin: 20px 0;
-} */
-
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.menu--inicio {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-.menu--inicio a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.menu--inicio a.active {
-    color: #007BFF; /* Color destacado */
-}
-
-section {
-    padding: 60px 20px;
-    margin-top: 60px; /* Añadido margen para evitar que el contenido se superponga con el header */
+    margin-top: 100px;
 }
 
 #sobre-mi, #tecnologias, #proyectos, #contacto {
-    height: 100vh; /* Altura para facilitar el scroll */
+    padding-top: 80px;
+    min-height: 100vh;
 }
