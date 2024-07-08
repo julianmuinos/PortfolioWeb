@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    background-color: rgb(15, 22, 36);
 }
 
-body {    
+body {
+    background-color: rgb(15, 22, 36);
     color: white;
 }
 
@@ -87,4 +87,68 @@ section {
 #sobre-mi, #tecnologias, #proyectos, #contacto {
     padding-top: 80px;
     min-height: 100vh;
+}
+
+.linea-de-tiempo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.linea-de-tiempo::before {
+    content: '';
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    right: 12%;
+    height: 6px;
+    background-color: white;
+    z-index: -1;
+}
+
+.linea-de-tiempo-item {
+    position: relative;
+    text-align: center;
+    width: 22%;
+}
+
+.linea-de-tiempo-item::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid rgb(15, 22, 36);
+    z-index: 1;
+}
+
+.linea-de-tiempo-fecha {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    top: -20px;
+    line-height: 1.5;
+}
+
+.linea-de-tiempo-contenido {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+    position: relative;
+    top: -20px;
+    background-color: rgb(15, 22, 36);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.linea-de-tiempo-contenido:hover {
+    transform: translateY(-10px);
 }
