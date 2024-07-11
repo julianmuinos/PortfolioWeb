@@ -14,3 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     changeLinkState();
     window.addEventListener('scroll', changeLinkState);
 });
+
+function abrirLinkedIn() {
+    window.open("https://www.linkedin.com/in/julian-mui%C3%B1os-0857a7187/", "_blank");
+}

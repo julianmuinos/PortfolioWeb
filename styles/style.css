@@ -87,7 +87,6 @@ section {
 #sobre-mi, #tecnologias, #proyectos, #contacto {
     padding-top: 80px;
     min-height: 100vh;
-    padding-bottom: 0;
 }
 
 .linea-de-tiempo {
@@ -210,10 +209,46 @@ section {
     font-size: 18px;
 }
 
-/* #tecnologias div {
-    margin-left: 100px;
-} */
-
 #tecnologias h1 {
     margin-bottom: 100px;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contacto-email {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.contacto-linkedin {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 150px;
+    background: linear-gradient(to right, #945DD6, #6978D1, #13ADC7);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    border: none;
+}
+
+.contacto-email img, .contacto-linkedin img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
