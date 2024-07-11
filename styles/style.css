@@ -81,12 +81,13 @@ h1 {
 }
 
 section {
-    margin-top: 100px;
+    padding-top: 80px;
 }
 
 #sobre-mi, #tecnologias, #proyectos, #contacto {
     padding-top: 80px;
     min-height: 100vh;
+    padding-bottom: 0;
 }
 
 .linea-de-tiempo {
@@ -151,4 +152,68 @@ section {
 
 .linea-de-tiempo-contenido:hover {
     transform: translateY(-10px);
+}
+
+.habilidad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.habilidad p {
+    flex: 1;
+    font-size: 20px;
+}
+
+.barra-progreso {
+    flex: 3;
+    height: 15px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.progreso {
+    height: 100%;
+    border-radius: 10px;    
+}
+
+.html {
+    width: 80%;
+    background: linear-gradient(to right, #945DD6, #6978D1, #13ADC7);
+}
+
+.csharp {
+    width: 80%;
+    background: linear-gradient(to right, #945DD6, #6978D1, #13ADC7);
+}
+
+.sql {
+    width: 80%;
+    background: linear-gradient(to right, #945DD6, #6978D1, #13ADC7);
+}
+
+.javascript {
+    width: 55%;
+    background: linear-gradient(to right, #945DD6, #6978D1, #13ADC7);
+}
+
+.css {
+    width: 30%;
+    background: linear-gradient(to right, #945DD6, #6978D1, #13ADC7);
+}
+
+.nivel {
+    flex: 1;
+    font-size: 18px;
+}
+
+/* #tecnologias div {
+    margin-left: 100px;
+} */
+
+#tecnologias h1 {
+    margin-bottom: 100px;
 }
